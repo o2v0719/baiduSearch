@@ -11,7 +11,7 @@
         <span class="baidu"> 百度搜索</span>
       </div>
     </div>
-    <div v-show="isShow" class="content">
+    <div v-show="isShow" class="content" ref="isShow">
       <ul>
         <li class="item" v-for="item in list" :key="item.sa" @click="replaceInput(item.q)">
           <i class="iconfont icon-soushuo"></i>
@@ -42,6 +42,8 @@ export default {
           `http://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&wd=${this.inputVal}`,
           this.handleCallback
         );
+      } else {
+        this.isShow = false;
       }
     },
     handleCallback (err, res) {
@@ -72,7 +74,7 @@ export default {
 </script>
 
 <style scoped>
-@import '../assets/font.css';
+@import '../assets/font/iconfont.css';
 .container {
   width: 500px;
   margin: 0 auto;

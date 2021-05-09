@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 2536352 */
-  src: url('//at.alicdn.com/t/font_2536352_f2sks0qu54.woff2?t=1620550963001') format('woff2'),
-       url('//at.alicdn.com/t/font_2536352_f2sks0qu54.woff?t=1620550963001') format('woff'),
-       url('//at.alicdn.com/t/font_2536352_f2sks0qu54.ttf?t=1620550963001') format('truetype');
+  src: url('iconfont.woff2?t=1620581200770') format('woff2'),
+       url('iconfont.woff?t=1620581200770') format('woff'),
+       url('iconfont.ttf?t=1620581200770') format('truetype');
 }
 
 .iconfont {
@@ -20,3 +20,4 @@
 .icon-chahao:before {
   content: "\e614";
 }
+
