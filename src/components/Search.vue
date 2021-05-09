@@ -11,7 +11,7 @@
         <span class="baidu"> 百度搜索</span>
       </div>
     </div>
-    <div v-show="isShow" class="content" ref="isShow">
+    <div v-show="isShow" class="content">
       <ul>
         <li class="item" v-for="item in list" :key="item.sa" @click="replaceInput(item.q)">
           <i class="iconfont icon-soushuo"></i>
@@ -43,6 +43,7 @@ export default {
           this.handleCallback
         );
       } else {
+        console.log(1);
         this.isShow = false;
       }
     },
